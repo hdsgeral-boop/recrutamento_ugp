@@ -194,7 +194,7 @@ recrutamento-bengo/
 ├── .env.example                  # Todas as variáveis necessárias
 ├── vercel.json                   # Região fra1 + cron diário de arquivamento
 ├── public/
-│   ├── logo-consulvolt.png       # Logótipo com fundo transparente
+│   ├── logo-consulvolt.png       # Logótipo com fundo transparente
 │   ├── icon.png                  # Favicon
 │   └── apple-icon.png
 ├── supabase/
