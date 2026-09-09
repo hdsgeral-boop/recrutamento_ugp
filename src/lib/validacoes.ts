@@ -205,9 +205,9 @@ export const esquemaMudancaStatus = z.object({
 export function limparNomeFicheiro(texto: string): string {
   return texto
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-zA-Z0-9\s_-]/g, "")
+    .replace(/[\\u0300-\\u036f]/g, "")
+    .replace(/[^a-zA-Z0-9\\s_-]/g, "")
     .trim()
-    .replace(/\s+/g, "_")
+    .replace(/\\s+/g, "_")
     .slice(0, 80);
 }
